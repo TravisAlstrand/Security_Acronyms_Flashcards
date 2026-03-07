@@ -9,8 +9,16 @@ const Flashcard = sequelize.define(
       allowNull: false,
       unique: true,
       validate: {
-        notEmpty: true,
-        len: [2, 15],
+        notNull: {
+          msg: "Acronym value was null",
+        },
+        notEmpty: {
+          msg: "Acronym cannot be empty",
+        },
+        len: {
+          args: [2, 15],
+          msg: "Acronym must be between 2 and 15 characters",
+        },
       },
     },
 
@@ -18,7 +26,12 @@ const Flashcard = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: true,
+        notNull: {
+          msg: "Definition value was null",
+        },
+        notEmpty: {
+          msg: "Definition cannot be empty",
+        },
       },
     },
 

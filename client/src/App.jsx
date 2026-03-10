@@ -29,10 +29,10 @@ function App() {
                 Home
               </Link>
               <Link
-                to="/flashcards"
+                to="/acronyms"
                 className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400"
               >
-                Flashcards
+                Acronyms
               </Link>
               <Link
                 to="/quiz"

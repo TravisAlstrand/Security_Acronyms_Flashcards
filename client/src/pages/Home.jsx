@@ -14,7 +14,7 @@ export default function Home() {
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         <Link
-          to="/flashcards"
+          to="/acronyms"
           className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all duration-300 hover:border-blue-500 hover:shadow-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:border-blue-400"
         >
           <div className="mb-3 flex items-center">
@@ -34,12 +34,12 @@ export default function Home() {
               </svg>
             </div>
             <h2 className="ml-3 text-2xl font-semibold text-gray-900 transition-colors group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
-              Flashcards
+              Acronyms
             </h2>
           </div>
           <p className="text-gray-600 dark:text-gray-400">
-            Browse and study security acronyms at your own pace. Flip cards to
-            reveal definitions and test your knowledge.
+            Browse and search all security acronyms in the database. View
+            definitions and helpful hints.
           </p>
         </Link>
 

@@ -3,6 +3,15 @@ const router = express.Router();
 const Flashcard = require("../models/flashcard");
 const { asyncHandler } = require("../middleware/asyncHandler");
 
+// Get all flashcards
+router.get(
+  "/all",
+  asyncHandler(async (req, res) => {
+    const allFlashcards = await Flashcard.findAll();
+    res.status(200).json(allFlashcards);
+  }),
+);
+
 // Retrieves a random flashcard from the database.
 // Counts total flashcards, generates a random ID within that range,
 // and returns the flashcard with that primary key.
@@ -27,31 +36,6 @@ router.get(
   }),
 );
 
-// Get a specific flashcard by ID
-router.get(
-  "/:id",
-  asyncHandler(async (req, res) => {
-    const flashcard = await Flashcard.findByPk(req.params.id);
-
-    if (flashcard) {
-      res.status(200).json(flashcard);
-    } else {
-      res
-        .status(404)
-        .json({ error: `Flashcard with id of ${req.params.id} was not found` });
-    }
-  }),
-);
-
-// Get all flashcards
-router.get(
-  "/all",
-  asyncHandler(async (req, res) => {
-    const allFlashcards = await Flashcard.findAll();
-    res.status(200).json(allFlashcards);
-  }),
-);
-
 // Creates a new flashcard
 router.post(
   "/new",
@@ -70,6 +54,22 @@ router.post(
       } else {
         throw error;
       }
+    }
+  }),
+);
+
+// Get a specific flashcard by ID
+router.get(
+  "/:id",
+  asyncHandler(async (req, res) => {
+    const flashcard = await Flashcard.findByPk(req.params.id);
+
+    if (flashcard) {
+      res.status(200).json(flashcard);
+    } else {
+      res
+        .status(404)
+        .json({ error: `Flashcard with id of ${req.params.id} was not found` });
     }
   }),
 );

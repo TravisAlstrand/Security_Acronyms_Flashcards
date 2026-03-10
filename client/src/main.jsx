@@ -5,7 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "./index.css";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
-import Flashcards from "./pages/Flashcards.jsx";
+import Acronyms from "./pages/Acronyms.jsx";
+import AddAcronym from "./pages/AddAcronym.jsx";
+import EditAcronym from "./pages/EditAcronym.jsx";
 import Quiz from "./pages/Quiz.jsx";
 
 const router = createBrowserRouter([
@@ -18,8 +20,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "flashcards",
-        element: <Flashcards />,
+        path: "acronyms",
+        element: <Acronyms />,
+      },
+      {
+        path: "acronyms/new",
+        element: <AddAcronym />,
+      },
+      {
+        path: "acronyms/edit/:id",
+        element: <EditAcronym />,
       },
       {
         path: "quiz",

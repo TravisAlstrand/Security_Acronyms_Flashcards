@@ -7,6 +7,7 @@ export default function AddAcronym() {
     acronym: "",
     definition: "",
     hint: "",
+    category: "",
   });
   const [errors, setErrors] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -34,6 +35,7 @@ export default function AddAcronym() {
           acronym: formData.acronym,
           definition: formData.definition,
           hint: formData.hint || null,
+          category: formData.category || null,
         }),
       });
 
@@ -78,10 +80,10 @@ export default function AddAcronym() {
           </svg>
           Back to Acronyms
         </Link>
-        <h1 className="mb-2 text-4xl font-bold text-gray-900 dark:text-white">
+        <h1 className="mb-2 text-3xl font-bold text-gray-900 sm:text-4xl dark:text-white">
           Add New Acronym
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
+        <p className="text-base text-gray-600 sm:text-lg dark:text-gray-400">
           Create a new security acronym entry.
         </p>
       </div>
@@ -101,7 +103,7 @@ export default function AddAcronym() {
 
       <form
         onSubmit={handleSubmit}
-        className="rounded-xl border border-gray-200 bg-white p-8 shadow-lg dark:border-gray-700 dark:bg-gray-800"
+        className="rounded-xl border border-gray-200 bg-white p-5 shadow-lg sm:p-8 dark:border-gray-700 dark:bg-gray-800"
       >
         <div className="mb-6">
           <label
@@ -142,6 +144,29 @@ export default function AddAcronym() {
           />
         </div>
 
+        <div className="mb-6">
+          <label
+            htmlFor="category"
+            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Category <span className="text-gray-500">(optional)</span>
+          </label>
+          <input
+            type="text"
+            id="category"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-400"
+            placeholder="e.g., Protocols, Cryptography, Networking"
+          />
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            Common categories: Protocols, Networking, Cryptography,
+            Authentication, Access Control, Security Systems, Cloud Computing,
+            Compliance
+          </p>
+        </div>
+
         <div className="mb-8">
           <label
             htmlFor="hint"
@@ -160,7 +185,7 @@ export default function AddAcronym() {
           />
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
           <button
             type="submit"
             disabled={isSubmitting}

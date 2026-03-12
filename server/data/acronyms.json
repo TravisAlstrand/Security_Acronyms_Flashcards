@@ -2,606 +2,727 @@
   {
     "acronym": "HTTP",
     "definitions": "Hypertext Transfer Protocol",
-    "hint": "The protocol used by browsers to request web pages on port 80."
+    "hint": "The protocol used by browsers to request web pages on port 80.",
+    "category": "Protocols"
   },
   {
     "acronym": "HTTPS",
     "definitions": "Hypertext Transfer Protocol Secure",
-    "hint": "Encrypted web traffic that uses TLS and typically runs on port 443."
+    "hint": "Encrypted web traffic that uses TLS and typically runs on port 443.",
+    "category": "Protocols"
   },
   {
     "acronym": "TLS",
     "definitions": "Transport Layer Security",
-    "hint": "Modern cryptographic protocol used to secure web traffic."
+    "hint": "Modern cryptographic protocol used to secure web traffic.",
+    "category": "Cryptography"
   },
   {
     "acronym": "SSL",
     "definitions": "Secure Sockets Layer",
-    "hint": "Older encryption protocol replaced by TLS."
+    "hint": "Older encryption protocol replaced by TLS.",
+    "category": "Cryptography"
   },
   {
     "acronym": "SSH",
     "definitions": "Secure Shell",
-    "hint": "Encrypted protocol commonly used for remote administration on port 22."
+    "hint": "Encrypted protocol commonly used for remote administration on port 22.",
+    "category": "Protocols"
   },
   {
     "acronym": "FTP",
     "definitions": "File Transfer Protocol",
-    "hint": "Legacy protocol used to transfer files between systems on port 21."
+    "hint": "Legacy protocol used to transfer files between systems on port 21.",
+    "category": "Protocols"
   },
   {
     "acronym": "SFTP",
     "definitions": "SSH File Transfer Protocol",
-    "hint": "Secure file transfer protocol that runs over SSH."
+    "hint": "Secure file transfer protocol that runs over SSH.",
+    "category": "Protocols"
   },
   {
     "acronym": "FTPS",
     "definitions": "File Transfer Protocol Secure",
-    "hint": "File transfer protocol secured using TLS."
+    "hint": "File transfer protocol secured using TLS.",
+    "category": "Protocols"
   },
   {
     "acronym": "DNS",
     "definitions": "Domain Name System",
-    "hint": "Service that translates domain names into IP addresses."
+    "hint": "Service that translates domain names into IP addresses.",
+    "category": "Networking"
   },
   {
     "acronym": "DHCP",
     "definitions": "Dynamic Host Configuration Protocol",
-    "hint": "Service that automatically assigns IP addresses to devices."
+    "hint": "Service that automatically assigns IP addresses to devices.",
+    "category": "Networking"
   },
   {
     "acronym": "IP",
     "definitions": "Internet Protocol",
-    "hint": "Core protocol responsible for addressing and routing packets across networks."
+    "hint": "Core protocol responsible for addressing and routing packets across networks.",
+    "category": "Networking"
   },
   {
     "acronym": "TCP",
     "definitions": "Transmission Control Protocol",
-    "hint": "Reliable transport protocol that guarantees packet delivery."
+    "hint": "Reliable transport protocol that guarantees packet delivery.",
+    "category": "Networking"
   },
   {
     "acronym": "UDP",
     "definitions": "User Datagram Protocol",
-    "hint": "Connectionless transport protocol used when speed is more important than reliability."
+    "hint": "Connectionless transport protocol used when speed is more important than reliability.",
+    "category": "Networking"
   },
   {
     "acronym": "VPN",
     "definitions": "Virtual Private Network",
-    "hint": "Creates an encrypted tunnel between a device and another network."
+    "hint": "Creates an encrypted tunnel between a device and another network.",
+    "category": "Networking"
   },
   {
     "acronym": "LAN",
     "definitions": "Local Area Network",
-    "hint": "Network covering a small geographic area like a home or office."
+    "hint": "Network covering a small geographic area like a home or office.",
+    "category": "Networking"
   },
   {
     "acronym": "WAN",
     "definitions": "Wide Area Network",
-    "hint": "Network that spans large geographic areas such as the internet."
+    "hint": "Network that spans large geographic areas such as the internet.",
+    "category": "Networking"
   },
   {
     "acronym": "VLAN",
     "definitions": "Virtual Local Area Network",
-    "hint": "Logically segments a network at the switch level."
+    "hint": "Logically segments a network at the switch level.",
+    "category": "Networking"
   },
   {
     "acronym": "MAC (ADDR)",
     "definitions": "Media Access Control",
-    "hint": "Hardware address assigned to a network interface."
+    "hint": "Hardware address assigned to a network interface.",
+    "category": "Networking"
   },
   {
     "acronym": "NAT",
     "definitions": "Network Address Translation",
-    "hint": "Allows multiple devices to share a single public IP address."
+    "hint": "Allows multiple devices to share a single public IP address.",
+    "category": "Networking"
   },
   {
     "acronym": "IDS",
     "definitions": "Intrusion Detection System",
-    "hint": "Monitors network or system activity for malicious behavior."
+    "hint": "Monitors network or system activity for malicious behavior.",
+    "category": "Security Systems"
   },
   {
     "acronym": "IPS",
     "definitions": "Intrusion Prevention System",
-    "hint": "Security device that actively blocks detected threats."
+    "hint": "Security device that actively blocks detected threats.",
+    "category": "Security Systems"
   },
   {
     "acronym": "SIEM",
     "definitions": "Security Information and Event Management",
-    "hint": "Aggregates and analyzes logs from multiple systems for security monitoring."
+    "hint": "Aggregates and analyzes logs from multiple systems for security monitoring.",
+    "category": "Security Systems"
   },
   {
     "acronym": "SOAR",
     "definitions": "Security Orchestration Automation and Response",
-    "hint": "Platform used to automate incident response workflows."
+    "hint": "Platform used to automate incident response workflows.",
+    "category": "Security Systems"
   },
   {
     "acronym": "IAM",
     "definitions": "Identity and Access Management",
-    "hint": "Framework used to manage user identities and permissions."
+    "hint": "Framework used to manage user identities and permissions.",
+    "category": "Authentication"
   },
   {
     "acronym": "MFA",
     "definitions": "Multi Factor Authentication",
-    "hint": "Authentication method requiring multiple verification factors."
+    "hint": "Authentication method requiring multiple verification factors.",
+    "category": "Authentication"
   },
   {
     "acronym": "SSO",
     "definitions": "Single Sign On",
-    "hint": "Authentication method allowing access to multiple systems with one login."
+    "hint": "Authentication method allowing access to multiple systems with one login.",
+    "category": "Authentication"
   },
   {
     "acronym": "RBAC",
     "definitions": "Role Based Access Control",
-    "hint": "Access control model where permissions are assigned based on job roles."
+    "hint": "Access control model where permissions are assigned based on job roles.",
+    "category": "Access Control"
   },
   {
     "acronym": "ABAC",
     "definitions": "Attribute Based Access Control",
-    "hint": "Access control model based on attributes like location, role, or device."
+    "hint": "Access control model based on attributes like location, role, or device.",
+    "category": "Access Control"
   },
   {
     "acronym": "DAC",
     "definitions": "Discretionary Access Control",
-    "hint": "Access model where the owner of a resource decides permissions."
+    "hint": "Access model where the owner of a resource decides permissions.",
+    "category": "Access Control"
   },
   {
     "acronym": "MAC (ACL)",
     "definitions": "Mandatory Access Control",
-    "hint": "Strict access model commonly used in government systems."
+    "hint": "Strict access model commonly used in government systems.",
+    "category": "Access Control"
   },
   {
     "acronym": "PKI",
     "definitions": "Public Key Infrastructure",
-    "hint": "Framework used to manage digital certificates and encryption keys."
+    "hint": "Framework used to manage digital certificates and encryption keys.",
+    "category": "Cryptography"
   },
   {
     "acronym": "CA",
     "definitions": "Certificate Authority",
-    "hint": "Trusted entity that issues digital certificates."
+    "hint": "Trusted entity that issues digital certificates.",
+    "category": "Cryptography"
   },
   {
     "acronym": "CSR",
     "definitions": "Certificate Signing Request",
-    "hint": "Request sent to a certificate authority to obtain a digital certificate."
+    "hint": "Request sent to a certificate authority to obtain a digital certificate.",
+    "category": "Cryptography"
   },
   {
     "acronym": "CRL",
     "definitions": "Certificate Revocation List",
-    "hint": "List of certificates that have been revoked before expiration."
+    "hint": "List of certificates that have been revoked before expiration.",
+    "category": "Cryptography"
   },
   {
     "acronym": "OCSP",
     "definitions": "Online Certificate Status Protocol",
-    "hint": "Protocol used to check the revocation status of a certificate."
+    "hint": "Protocol used to check the revocation status of a certificate.",
+    "category": "Protocols"
   },
   {
     "acronym": "AES",
     "definitions": "Advanced Encryption Standard",
-    "hint": "Modern symmetric encryption algorithm widely used to secure data."
+    "hint": "Modern symmetric encryption algorithm widely used to secure data.",
+    "category": "Cryptography"
   },
   {
     "acronym": "DES",
     "definitions": "Data Encryption Standard",
-    "hint": "Legacy symmetric encryption algorithm replaced by stronger methods."
+    "hint": "Legacy symmetric encryption algorithm replaced by stronger methods.",
+    "category": "Cryptography"
   },
   {
     "acronym": "3DES",
     "definitions": "Triple Data Encryption Standard",
-    "hint": "Applies DES encryption three times to increase security."
+    "hint": "Applies DES encryption three times to increase security.",
+    "category": "Cryptography"
   },
   {
     "acronym": "RSA",
     "definitions": "Rivest Shamir Adleman",
-    "hint": "Common asymmetric encryption algorithm used for secure key exchange."
+    "hint": "Common asymmetric encryption algorithm used for secure key exchange.",
+    "category": "Cryptography"
   },
   {
     "acronym": "ECC",
     "definitions": "Elliptic Curve Cryptography",
-    "hint": "Encryption approach that provides strong security with smaller keys."
+    "hint": "Encryption approach that provides strong security with smaller keys.",
+    "category": "Cryptography"
   },
   {
     "acronym": "SHA",
     "definitions": "Secure Hash Algorithm",
-    "hint": "Family of cryptographic hashing functions used for integrity verification."
+    "hint": "Family of cryptographic hashing functions used for integrity verification.",
+    "category": "Cryptography"
   },
   {
     "acronym": "MD5",
     "definitions": "Message Digest Algorithm 5",
-    "hint": "Older hashing algorithm now considered insecure due to collision attacks."
+    "hint": "Older hashing algorithm now considered insecure due to collision attacks.",
+    "category": "Cryptography"
   },
   {
     "acronym": "HMAC",
     "definitions": "Hash Based Message Authentication Code",
-    "hint": "Uses a secret key with a hash function to verify integrity and authenticity."
+    "hint": "Uses a secret key with a hash function to verify integrity and authenticity.",
+    "category": "Cryptography"
   },
   {
     "acronym": "OTP",
     "definitions": "One Time Password",
-    "hint": "Authentication code that can only be used once."
+    "hint": "Authentication code that can only be used once.",
+    "category": "Authentication"
   },
   {
     "acronym": "TOTP",
     "definitions": "Time Based One Time Password",
-    "hint": "Authentication code generated based on the current time."
+    "hint": "Authentication code generated based on the current time.",
+    "category": "Authentication"
   },
   {
     "acronym": "HOTP",
     "definitions": "HMAC Based One Time Password",
-    "hint": "Authentication code generated using a counter instead of time."
+    "hint": "Authentication code generated using a counter instead of time.",
+    "category": "Authentication"
   },
   {
     "acronym": "RADIUS",
     "definitions": "Remote Authentication Dial In User Service",
-    "hint": "Centralized authentication protocol commonly used for network access."
+    "hint": "Centralized authentication protocol commonly used for network access.",
+    "category": "Protocols"
   },
   {
     "acronym": "TACACS",
     "definitions": "Terminal Access Controller Access Control System",
-    "hint": "Authentication protocol often used for administrative access to network devices."
+    "hint": "Authentication protocol often used for administrative access to network devices.",
+    "category": "Protocols"
   },
   {
     "acronym": "LDAP",
     "definitions": "Lightweight Directory Access Protocol",
-    "hint": "Protocol used to access directory services such as user account databases."
+    "hint": "Protocol used to access directory services such as user account databases.",
+    "category": "Protocols"
   },
   {
     "acronym": "AD",
     "definitions": "Active Directory",
-    "hint": "Microsoft directory service used to manage users, computers, and permissions."
+    "hint": "Microsoft directory service used to manage users, computers, and permissions.",
+    "category": "Identity Management"
   },
   {
     "acronym": "SAML",
     "definitions": "Security Assertion Markup Language",
-    "hint": "Authentication framework used for single sign on between organizations."
+    "hint": "Authentication framework used for single sign on between organizations.",
+    "category": "Authentication"
   },
   {
     "acronym": "OAuth",
     "definitions": "Open Authorization",
-    "hint": "Authorization framework allowing applications to access user data without sharing passwords."
+    "hint": "Authorization framework allowing applications to access user data without sharing passwords.",
+    "category": "Authentication"
   },
   {
     "acronym": "OIDC",
     "definitions": "OpenID Connect",
-    "hint": "Authentication layer built on top of OAuth."
+    "hint": "Authentication layer built on top of OAuth.",
+    "category": "Authentication"
   },
   {
     "acronym": "WPA",
     "definitions": "WiFi Protected Access",
-    "hint": "Wireless security protocol designed to replace WEP."
+    "hint": "Wireless security protocol designed to replace WEP.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "WPA2",
     "definitions": "WiFi Protected Access 2",
-    "hint": "Wireless encryption standard that introduced AES based security."
+    "hint": "Wireless encryption standard that introduced AES based security.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "WPA3",
     "definitions": "WiFi Protected Access 3",
-    "hint": "Newest wireless security protocol with stronger authentication protections."
+    "hint": "Newest wireless security protocol with stronger authentication protections.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "WEP",
     "definitions": "Wired Equivalent Privacy",
-    "hint": "Outdated wireless security protocol vulnerable to cracking."
+    "hint": "Outdated wireless security protocol vulnerable to cracking.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "EAP",
     "definitions": "Extensible Authentication Protocol",
-    "hint": "Authentication framework commonly used for wireless networks."
+    "hint": "Authentication framework commonly used for wireless networks.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "PEAP",
     "definitions": "Protected Extensible Authentication Protocol",
-    "hint": "Encapsulates EAP authentication within an encrypted TLS tunnel."
+    "hint": "Encapsulates EAP authentication within an encrypted TLS tunnel.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "LEAP",
     "definitions": "Lightweight Extensible Authentication Protocol",
-    "hint": "Cisco wireless authentication method now considered insecure."
+    "hint": "Cisco wireless authentication method now considered insecure.",
+    "category": "Wireless Security"
   },
   {
     "acronym": "WAF",
     "definitions": "Web Application Firewall",
-    "hint": "Security system that filters malicious HTTP traffic to web applications."
+    "hint": "Security system that filters malicious HTTP traffic to web applications.",
+    "category": "Security Systems"
   },
   {
     "acronym": "DLP",
     "definitions": "Data Loss Prevention",
-    "hint": "Technology used to prevent sensitive data from leaving an organization."
+    "hint": "Technology used to prevent sensitive data from leaving an organization.",
+    "category": "Security Systems"
   },
   {
     "acronym": "EDR",
     "definitions": "Endpoint Detection and Response",
-    "hint": "Security solution focused on detecting threats on endpoints."
+    "hint": "Security solution focused on detecting threats on endpoints.",
+    "category": "Security Systems"
   },
   {
     "acronym": "XDR",
     "definitions": "Extended Detection and Response",
-    "hint": "Security platform that correlates threats across multiple environments."
+    "hint": "Security platform that correlates threats across multiple environments.",
+    "category": "Security Systems"
   },
   {
     "acronym": "SOC",
     "definitions": "Security Operations Center",
-    "hint": "Centralized team responsible for monitoring and responding to security incidents."
+    "hint": "Centralized team responsible for monitoring and responding to security incidents.",
+    "category": "Security Operations"
   },
   {
     "acronym": "IOC",
     "definitions": "Indicator of Compromise",
-    "hint": "Evidence suggesting a system has been breached."
+    "hint": "Evidence suggesting a system has been breached.",
+    "category": "Threat Intelligence"
   },
   {
     "acronym": "IOA",
     "definitions": "Indicator of Attack",
-    "hint": "Evidence suggesting malicious activity is occurring."
+    "hint": "Evidence suggesting malicious activity is occurring.",
+    "category": "Threat Intelligence"
   },
   {
     "acronym": "MITM",
     "definitions": "Man In The Middle",
-    "hint": "Attack where an adversary secretly intercepts communications."
+    "hint": "Attack where an adversary secretly intercepts communications.",
+    "category": "Attacks"
   },
   {
     "acronym": "XSS",
     "definitions": "Cross Site Scripting",
-    "hint": "Web vulnerability allowing attackers to inject malicious scripts into web pages."
+    "hint": "Web vulnerability allowing attackers to inject malicious scripts into web pages.",
+    "category": "Attacks"
   },
   {
     "acronym": "SQLI",
     "definitions": "SQL Injection",
-    "hint": "Attack that manipulates database queries through input fields."
+    "hint": "Attack that manipulates database queries through input fields.",
+    "category": "Attacks"
   },
   {
     "acronym": "CSRF",
     "definitions": "Cross Site Request Forgery",
-    "hint": "Attack that tricks a user into executing unwanted actions on a web application."
+    "hint": "Attack that tricks a user into executing unwanted actions on a web application.",
+    "category": "Attacks"
   },
   {
     "acronym": "DOS",
     "definitions": "Denial of Service",
-    "hint": "Attack designed to overwhelm a system and make it unavailable."
+    "hint": "Attack designed to overwhelm a system and make it unavailable.",
+    "category": "Attacks"
   },
   {
     "acronym": "DDOS",
     "definitions": "Distributed Denial of Service",
-    "hint": "Attack where many compromised machines flood a target with traffic."
+    "hint": "Attack where many compromised machines flood a target with traffic.",
+    "category": "Attacks"
   },
   {
     "acronym": "APT",
     "definitions": "Advanced Persistent Threat",
-    "hint": "Sophisticated long term cyber attack often conducted by nation state actors."
+    "hint": "Sophisticated long term cyber attack often conducted by nation state actors.",
+    "category": "Threats"
   },
   {
     "acronym": "BYOD",
     "definitions": "Bring Your Own Device",
-    "hint": "Policy allowing employees to use personal devices for work."
+    "hint": "Policy allowing employees to use personal devices for work.",
+    "category": "Mobile Security"
   },
   {
     "acronym": "MDM",
     "definitions": "Mobile Device Management",
-    "hint": "Technology used to manage and secure mobile devices in an organization."
+    "hint": "Technology used to manage and secure mobile devices in an organization.",
+    "category": "Mobile Security"
   },
   {
     "acronym": "CASB",
     "definitions": "Cloud Access Security Broker",
-    "hint": "Security layer between users and cloud services."
+    "hint": "Security layer between users and cloud services.",
+    "category": "Cloud Security"
   },
   {
     "acronym": "CSP",
     "definitions": "Cloud Service Provider",
-    "hint": "Company that offers cloud infrastructure or services."
+    "hint": "Company that offers cloud infrastructure or services.",
+    "category": "Cloud Computing"
   },
   {
     "acronym": "IaaS",
     "definitions": "Infrastructure as a Service",
-    "hint": "Cloud model providing virtual machines and infrastructure resources."
+    "hint": "Cloud model providing virtual machines and infrastructure resources.",
+    "category": "Cloud Computing"
   },
   {
     "acronym": "PaaS",
     "definitions": "Platform as a Service",
-    "hint": "Cloud model providing development platforms without managing infrastructure."
+    "hint": "Cloud model providing development platforms without managing infrastructure.",
+    "category": "Cloud Computing"
   },
   {
     "acronym": "SaaS",
     "definitions": "Software as a Service",
-    "hint": "Cloud model delivering software through a web browser."
+    "hint": "Cloud model delivering software through a web browser.",
+    "category": "Cloud Computing"
   },
   {
     "acronym": "CIA",
     "definitions": "Confidentiality Integrity Availability",
-    "hint": "The core security model describing the three primary goals of information security."
+    "hint": "The core security model describing the three primary goals of information security.",
+    "category": "Security Frameworks"
   },
   {
     "acronym": "DR",
     "definitions": "Disaster Recovery",
-    "hint": "Processes used to restore systems and operations after a major disruption."
+    "hint": "Processes used to restore systems and operations after a major disruption.",
+    "category": "Business Continuity"
   },
   {
     "acronym": "BCP",
     "definitions": "Business Continuity Plan",
-    "hint": "Plan that ensures critical business functions continue during disruptions."
+    "hint": "Plan that ensures critical business functions continue during disruptions.",
+    "category": "Business Continuity"
   },
   {
     "acronym": "RTO",
     "definitions": "Recovery Time Objective",
-    "hint": "Maximum acceptable time a system can be offline after a disaster."
+    "hint": "Maximum acceptable time a system can be offline after a disaster.",
+    "category": "Business Continuity"
   },
   {
     "acronym": "RPO",
     "definitions": "Recovery Point Objective",
-    "hint": "Maximum acceptable amount of data loss measured in time."
+    "hint": "Maximum acceptable amount of data loss measured in time.",
+    "category": "Business Continuity"
   },
   {
     "acronym": "MTTR",
     "definitions": "Mean Time To Repair",
-    "hint": "Average time required to fix a failed component."
+    "hint": "Average time required to fix a failed component.",
+    "category": "Business Continuity"
   },
   {
     "acronym": "MTBF",
     "definitions": "Mean Time Between Failures",
-    "hint": "Average time a system operates before failing."
+    "hint": "Average time a system operates before failing.",
+    "category": "Business Continuity"
   },
   {
     "acronym": "SLA",
     "definitions": "Service Level Agreement",
-    "hint": "Contract defining expected service performance between provider and customer."
+    "hint": "Contract defining expected service performance between provider and customer.",
+    "category": "Governance"
   },
   {
     "acronym": "MOU",
     "definitions": "Memorandum of Understanding",
-    "hint": "Agreement describing cooperation between two or more organizations."
+    "hint": "Agreement describing cooperation between two or more organizations.",
+    "category": "Governance"
   },
   {
     "acronym": "NDA",
     "definitions": "Non Disclosure Agreement",
-    "hint": "Legal contract preventing parties from sharing confidential information."
+    "hint": "Legal contract preventing parties from sharing confidential information.",
+    "category": "Governance"
   },
   {
     "acronym": "PII",
     "definitions": "Personally Identifiable Information",
-    "hint": "Information that can identify a specific individual."
+    "hint": "Information that can identify a specific individual.",
+    "category": "Data Privacy"
   },
   {
     "acronym": "PHI",
     "definitions": "Protected Health Information",
-    "hint": "Sensitive medical information protected under healthcare regulations."
+    "hint": "Sensitive medical information protected under healthcare regulations.",
+    "category": "Data Privacy"
   },
   {
     "acronym": "GDPR",
     "definitions": "General Data Protection Regulation",
-    "hint": "European regulation governing the protection of personal data."
+    "hint": "European regulation governing the protection of personal data.",
+    "category": "Compliance"
   },
   {
     "acronym": "HIPAA",
     "definitions": "Health Insurance Portability and Accountability Act",
-    "hint": "US law protecting the privacy and security of medical information."
+    "hint": "US law protecting the privacy and security of medical information.",
+    "category": "Compliance"
   },
   {
     "acronym": "PCI",
     "definitions": "Payment Card Industry",
-    "hint": "Standards created to protect credit card information."
+    "hint": "Standards created to protect credit card information.",
+    "category": "Compliance"
   },
   {
     "acronym": "PCI DSS",
     "definitions": "Payment Card Industry Data Security Standard",
-    "hint": "Security standard required for organizations that handle credit card data."
+    "hint": "Security standard required for organizations that handle credit card data.",
+    "category": "Compliance"
   },
   {
     "acronym": "ISO",
     "definitions": "International Organization for Standardization",
-    "hint": "Organization that develops global standards including information security frameworks."
+    "hint": "Organization that develops global standards including information security frameworks.",
+    "category": "Standards"
   },
   {
     "acronym": "NIST",
     "definitions": "National Institute of Standards and Technology",
-    "hint": "US organization that develops cybersecurity frameworks and guidelines."
+    "hint": "US organization that develops cybersecurity frameworks and guidelines.",
+    "category": "Standards"
   },
   {
     "acronym": "OWASP",
     "definitions": "Open Web Application Security Project",
-    "hint": "Organization known for publishing the Top 10 web application vulnerabilities."
+    "hint": "Organization known for publishing the Top 10 web application vulnerabilities.",
+    "category": "Standards"
   },
   {
     "acronym": "CVE",
     "definitions": "Common Vulnerabilities and Exposures",
-    "hint": "Public catalog of known cybersecurity vulnerabilities."
+    "hint": "Public catalog of known cybersecurity vulnerabilities.",
+    "category": "Vulnerability Management"
   },
   {
     "acronym": "CVSS",
     "definitions": "Common Vulnerability Scoring System",
-    "hint": "Standardized method for rating the severity of security vulnerabilities."
+    "hint": "Standardized method for rating the severity of security vulnerabilities.",
+    "category": "Vulnerability Management"
   },
   {
     "acronym": "CIS",
     "definitions": "Center for Internet Security",
-    "hint": "Organization known for security benchmarks and critical security controls."
+    "hint": "Organization known for security benchmarks and critical security controls.",
+    "category": "Standards"
   },
   {
     "acronym": "SCADA",
     "definitions": "Supervisory Control and Data Acquisition",
-    "hint": "Industrial control system used to monitor and control infrastructure."
+    "hint": "Industrial control system used to monitor and control infrastructure.",
+    "category": "Industrial Control"
   },
   {
     "acronym": "ICS",
     "definitions": "Industrial Control System",
-    "hint": "System used to control industrial processes such as manufacturing or utilities."
+    "hint": "System used to control industrial processes such as manufacturing or utilities.",
+    "category": "Industrial Control"
   },
   {
     "acronym": "PLC",
     "definitions": "Programmable Logic Controller",
-    "hint": "Industrial computer used to control machinery and automation."
+    "hint": "Industrial computer used to control machinery and automation.",
+    "category": "Industrial Control"
   },
   {
     "acronym": "HSM",
     "definitions": "Hardware Security Module",
-    "hint": "Physical device used to securely store cryptographic keys."
+    "hint": "Physical device used to securely store cryptographic keys.",
+    "category": "Hardware Security"
   },
   {
     "acronym": "TPM",
     "definitions": "Trusted Platform Module",
-    "hint": "Hardware chip used to store cryptographic keys and support secure boot."
+    "hint": "Hardware chip used to store cryptographic keys and support secure boot.",
+    "category": "Hardware Security"
   },
   {
     "acronym": "UEFI",
     "definitions": "Unified Extensible Firmware Interface",
-    "hint": "Modern firmware interface replacing the traditional BIOS."
+    "hint": "Modern firmware interface replacing the traditional BIOS.",
+    "category": "Hardware"
   },
   {
     "acronym": "BIOS",
     "definitions": "Basic Input Output System",
-    "hint": "Firmware responsible for initializing hardware during system startup."
+    "hint": "Firmware responsible for initializing hardware during system startup.",
+    "category": "Hardware"
   },
   {
     "acronym": "FDE",
     "definitions": "Full Disk Encryption",
-    "hint": "Encryption method that protects all data stored on a disk."
+    "hint": "Encryption method that protects all data stored on a disk.",
+    "category": "Data Protection"
   },
   {
     "acronym": "SED",
     "definitions": "Self Encrypting Drive",
-    "hint": "Storage device that automatically encrypts data written to it."
+    "hint": "Storage device that automatically encrypts data written to it.",
+    "category": "Hardware Security"
   },
   {
     "acronym": "RAID",
     "definitions": "Redundant Array of Independent Disks",
-    "hint": "Storage technology that combines multiple drives for redundancy or performance."
+    "hint": "Storage technology that combines multiple drives for redundancy or performance.",
+    "category": "Storage"
   },
   {
     "acronym": "SAN",
     "definitions": "Storage Area Network",
-    "hint": "Dedicated high speed network providing access to consolidated storage."
+    "hint": "Dedicated high speed network providing access to consolidated storage.",
+    "category": "Storage"
   },
   {
     "acronym": "NAS",
     "definitions": "Network Attached Storage",
-    "hint": "File storage device connected to a network that allows shared access."
+    "hint": "File storage device connected to a network that allows shared access.",
+    "category": "Storage"
   },
   {
     "acronym": "USB",
     "definitions": "Universal Serial Bus",
-    "hint": "Common interface used to connect peripherals to computers."
+    "hint": "Common interface used to connect peripherals to computers.",
+    "category": "Hardware"
   },
   {
     "acronym": "RFID",
     "definitions": "Radio Frequency Identification",
-    "hint": "Technology that uses radio waves to identify and track objects."
+    "hint": "Technology that uses radio waves to identify and track objects.",
+    "category": "Hardware"
   },
   {
     "acronym": "NFC",
     "definitions": "Near Field Communication",
-    "hint": "Short range wireless technology often used for contactless payments."
+    "hint": "Short range wireless technology often used for contactless payments.",
+    "category": "Hardware"
   },
   {
     "acronym": "GPS",
     "definitions": "Global Positioning System",
-    "hint": "Satellite system used to determine geographic location."
+    "hint": "Satellite system used to determine geographic location.",
+    "category": "Hardware"
   },
   {
     "acronym": "IOT",
     "definitions": "Internet of Things",
-    "hint": "Network of physical devices connected to the internet."
+    "hint": "Network of physical devices connected to the internet.",
+    "category": "IoT"
   },
   {
     "acronym": "IIOT",
     "definitions": "Industrial Internet of Things",
-    "hint": "Application of connected devices within industrial environments."
+    "hint": "Application of connected devices within industrial environments.",
+    "category": "IoT"
   }
 ]

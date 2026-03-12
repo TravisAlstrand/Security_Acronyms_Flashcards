@@ -20,6 +20,7 @@ async function exportDatabase() {
       acronym: card.acronym,
       definitions: card.definition, // Map 'definition' to 'definitions'
       hint: card.hint || "",
+      category: card.category || "",
     }));
 
     // Write to the JSON file

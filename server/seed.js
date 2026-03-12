@@ -22,6 +22,7 @@ async function seedDatabase() {
       acronym: item.acronym,
       definition: item.definitions, // Map 'definitions' to 'definition'
       hint: item.hint || null,
+      category: item.category || null,
     }));
 
     // Bulk insert all flashcards

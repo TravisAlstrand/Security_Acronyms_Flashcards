@@ -8,6 +8,7 @@ export default function EditAcronym() {
     acronym: "",
     definition: "",
     hint: "",
+    category: "",
   });
   const [errors, setErrors] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,6 +30,7 @@ export default function EditAcronym() {
           acronym: data.acronym,
           definition: data.definition,
           hint: data.hint || "",
+          category: data.category || "",
         });
         setIsLoading(false);
       } catch {
@@ -64,6 +66,7 @@ export default function EditAcronym() {
           body: JSON.stringify({
             acronym: formData.acronym,
             definition: formData.definition,
+            category: formData.category || null,
             hint: formData.hint || null,
           }),
         },
@@ -149,10 +152,10 @@ export default function EditAcronym() {
           </svg>
           Back to Acronyms
         </Link>
-        <h1 className="mb-2 text-4xl font-bold text-gray-900 dark:text-white">
+        <h1 className="mb-2 text-3xl font-bold text-gray-900 sm:text-4xl dark:text-white">
           Edit Acronym
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
+        <p className="text-base text-gray-600 sm:text-lg dark:text-gray-400">
           Update the acronym details.
         </p>
       </div>
@@ -172,7 +175,7 @@ export default function EditAcronym() {
 
       <form
         onSubmit={handleSubmit}
-        className="rounded-xl border border-gray-200 bg-white p-8 shadow-lg dark:border-gray-700 dark:bg-gray-800"
+        className="rounded-xl border border-gray-200 bg-white p-5 shadow-lg sm:p-8 dark:border-gray-700 dark:bg-gray-800"
       >
         <div className="mb-6">
           <label
@@ -213,6 +216,29 @@ export default function EditAcronym() {
           />
         </div>
 
+        <div className="mb-6">
+          <label
+            htmlFor="category"
+            className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Category <span className="text-gray-500">(optional)</span>
+          </label>
+          <input
+            type="text"
+            id="category"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:border-blue-400"
+            placeholder="e.g., Protocols, Cryptography, Networking"
+          />
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            Common categories: Protocols, Networking, Cryptography,
+            Authentication, Access Control, Security Systems, Cloud Computing,
+            Compliance
+          </p>
+        </div>
+
         <div className="mb-8">
           <label
             htmlFor="hint"
@@ -231,7 +257,7 @@ export default function EditAcronym() {
           />
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
           <button
             type="submit"
             disabled={isSubmitting}
@@ -247,11 +273,11 @@ export default function EditAcronym() {
           </Link>
         </div>
 
-        <div className="mt-8 border-t border-gray-200 pt-8 dark:border-gray-700">
-          <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">
+        <div className="mt-6 border-t border-gray-200 pt-6 sm:mt-8 sm:pt-8 dark:border-gray-700">
+          <h3 className="mb-3 text-base font-semibold text-gray-900 sm:text-lg dark:text-white">
             Danger Zone
           </h3>
-          <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mb-4 text-sm text-gray-600 sm:text-base dark:text-gray-400">
             Deleting an acronym is permanent and cannot be undone.
           </p>
           <button
@@ -267,18 +293,18 @@ export default function EditAcronym() {
       {/* Delete Confirmation Modal */}
       {showDeleteModal && (
         <div className="bg-opacity-50 fixed inset-0 z-50 flex items-center justify-center bg-black p-4">
-          <div className="max-w-md rounded-xl border border-gray-200 bg-white p-6 shadow-2xl dark:border-gray-700 dark:bg-gray-800">
-            <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+          <div className="w-full max-w-md rounded-xl border border-gray-200 bg-white p-5 shadow-2xl sm:p-6 dark:border-gray-700 dark:bg-gray-800">
+            <h2 className="mb-4 text-xl font-bold text-gray-900 sm:text-2xl dark:text-white">
               Confirm Delete
             </h2>
-            <p className="mb-6 text-gray-600 dark:text-gray-400">
+            <p className="mb-6 text-sm text-gray-600 sm:text-base dark:text-gray-400">
               Are you sure you want to delete the acronym{" "}
               <span className="font-semibold text-gray-900 dark:text-white">
                 {formData.acronym}
               </span>
               ? This action cannot be undone.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
               <button
                 onClick={handleDelete}
                 disabled={isDeleting}

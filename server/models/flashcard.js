@@ -39,6 +39,11 @@ const Flashcard = sequelize.define(
       type: DataTypes.STRING,
       allowNull: true,
     },
+
+    category: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     tableName: "Flashcards",

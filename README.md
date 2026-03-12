@@ -237,8 +237,6 @@ The application uses a single `Flashcards` table with the following fields:
 - `definition` - Text, Required
 - `hint` - Text, Optional
 - `category` - String, Optional
-- `createdAt` - DateTime, Auto-generated
-- `updatedAt` - DateTime, Auto-updated
 
 ## Contributing
 
